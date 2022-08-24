@@ -1,19 +1,9 @@
+
+
 const slides = document.querySelectorAll('.slider-container');
 const nextBtn = document.querySelector(".nextBtn");
 const prevBtn = document.querySelector(".prevBtn");
 
-// let counter = 1;
-// slides.forEach(function (slide, index) {
-//   slide.style.left = `${index * 100}%`
-// });
-
-// nextBtn.addEventListener('click', () => {
-//   counter++;
-//   if(counter>slides.length-1){
-//     prevBtn.click();
-//   }
-
-// });
 let counter = 0;
 nextBtn.addEventListener("click", function () {
   counter++;
@@ -67,7 +57,6 @@ window.addEventListener('DOMContentLoaded', function () {
   setTimeout(yourFunction, 5000);
   animateSlide();
 })
-
 
 function animateSlide() {
   const slideAnimation = document.querySelectorAll('.slideAnimation');
