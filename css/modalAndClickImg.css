@@ -3,10 +3,10 @@
   transition: 0.2s all linear;
 }
 .clickToOpen:hover{
-  background-color: white;
+  /* background-color: white; */
   cursor: pointer;
   filter: blur(2px);
-  box-shadow: 3px 0px 2px 2px rgba(255, 166, 0, 0.145);
+  /* box-shadow: 3px 0px 2px 2px rgba(255, 166, 0, 0.145); */
 }
 .modalForClickImage{
   z-index: 1000;
@@ -80,4 +80,5 @@ box-shadow: var(--dark-shadow);
 
 .modalButtonsImg{
   display: flex;
+  
 }

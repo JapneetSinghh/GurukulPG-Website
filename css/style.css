@@ -1,5 +1,5 @@
 :root {
-  --primary-color: rgb(163, 120, 9);
+  --primary-color: rgb(153, 110, 2);
   /* --mustard: #7b9bbc; */
   --mustard: #FFB200;
   --transition: 0.3s all linear;
@@ -308,8 +308,7 @@ a {
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.556);
-  position: relative;
-
+  transition: 0.8s ease-in;  
 }
 
 
@@ -584,7 +583,6 @@ box-shadow: 1px 9px 180px #35200056;
   padding-right:15px;
   width: auto;
   display: inline-block;
-
 }
 .header-aboutus p{
   font-size: 15px;
