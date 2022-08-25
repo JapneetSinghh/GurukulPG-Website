@@ -8,7 +8,7 @@ function sleep(){
   setTimeout(()=>{
     clickToOpenImages();
 
-  },700)
+  },1200)
 }
 
 function clickToOpenImages(){
