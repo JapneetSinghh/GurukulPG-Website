@@ -1,7 +1,7 @@
 #sideForm {
   position: fixed;
   z-index: 999;
-  top: 50%;
+  top: 55%;
   right: 0;
   transform: translateY(-50%);
   /* height:auto; */
@@ -18,7 +18,7 @@
 .sideForm-container {
   /* width: 300px; */
   width: 0;
-  height: 400px;
+  height: 450px;
   background-color: rgb(248, 249, 238);
   border-bottom-left-radius: 20px;
   border-top-left-radius: 20px;
@@ -30,7 +30,7 @@
 }
 
 .sideFormNav {
-  width: 50px;
+  width: 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -52,7 +52,7 @@
 .rotate270 {
   transform: rotate(270deg);
   color: white;
-  width: 50px;
+  width: 60px;
   height: 60px;
   display: flex;
   justify-content: center;
@@ -81,7 +81,7 @@
 .sideForm-block1 {
   background-color: black;
   color: white;
-  width: 50px;
+  width: 60px;
   text-align: center;
   padding: 7px;
   border-top-left-radius: 10px;
@@ -90,10 +90,10 @@
 }
 
 .sideForm-block3, .sideForm-block4 {
-  width: 50px;
+  width: 60px;
   text-align: center;
-  padding: 12px 5px;
-  font-size: 17px;
+  padding: 14px 5px;
+  font-size: 20px;
   color: white;
   transition: 0.3s all linear;
 }
@@ -131,8 +131,8 @@
   top: 0;
   transform: translateX(82px);
   margin: 0;
-  height: 40px;
-  padding: 22px 14px;
+  height: 49.5px;
+  padding: 22px 16px;
   border-bottom-left-radius: 10px;
   border-top-left-radius: 10px;
   width: 120px;
@@ -140,7 +140,7 @@
   transition: 0.3s all linear;
   z-index: -3;
   text-transform: capitalize;
-  font-size: 15px;
+  font-size: 16px;
   letter-spacing: 2px;
 }
 
@@ -186,7 +186,7 @@
 
 .closeSideForm {
   padding: 15px;
-  font-size: 25px;
+  font-size: 28px;
   color: red;
   transition: 0.3s all linear;
 }
@@ -211,7 +211,7 @@ margin: 15px;
   padding: 5px;
 }
 .sideForm-container .section-header h3{
-  font-size: 20px;
+  font-size: 24px;
   margin: 4px;
   color: rgb(3, 11, 82);
 }
@@ -225,21 +225,25 @@ margin: 15px;
   display: flex;
   flex-direction: column;
   padding: 15px;
+
 }
 #sideContactForm input{
-  margin-bottom: 5px;
+  margin-bottom: 7px;
   border-radius: 10px;
   border: 1px solid gainsboro;
-  padding: 4px 8px;
+  padding: 6px 8px;
   color: #333;
+  font-size: 15px;
+
 }
 #sideContactForm textarea{
-  height: 100px;
-  margin-bottom: 5px;
+  height: 120px;
+  margin-bottom: 8px;
   border: 1px solid gainsboro;
   border-radius: 10px;
   padding: 8px;
   color: #333;
+  font-size: 15px;
   
 }
 #sideContactForm input:focus{
@@ -258,6 +262,7 @@ margin-bottom: 4px;
 color: #333;
 padding: 2px;
 background: rgb(224, 223, 223);
+font-size: 14px;
 }
 
 #sideContactForm .SideformSubmitbtn{
@@ -272,4 +277,8 @@ background-color: var(--mustard);
 cursor: pointer;
 
 }
-
+@media screen and (max-width:800px) {
+  .sideForm-container{
+    max-width: 300px;
+  }
+}
