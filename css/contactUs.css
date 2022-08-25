@@ -2,83 +2,67 @@
   max-width: 1100px;
   margin: auto;
 }
-
 .contacts {
   height: auto;
   display: flex;
 }
-
 .contacts .contacts-map {
   background-color: rgb(7, 11, 11);
   box-shadow: var(--dark-shadow);
 }
-
 .contacts .contacts-content {
-
   background: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.794)), url(../img/whiteBack.jpg) center center/cover no-repeat;
   box-shadow: var(--dark-shadow);
 }
-
 .contacts .contacts-content, .contacts .contacts-map {
   width: 50%;
   margin: 10px;
 }
-
 .contacts .contacts-map iframe {
   width: 100%;
   height: 100%;
 }
-
 .contacts .contacts-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 60px 30px;
 }
-
 .contacts .contacts-content h2, h3 {
   color: var(--mustard);
 }
-
 .contacts .contacts-content h2 {
   font-size: 35px;
   margin-bottom: 10px;
 }
-
 .contacts .contacts-content h1 {
   font-size: 30px;
   margin-bottom: 10px;
   color: #333;
 }
-
 .contacts .contacts-content h3 {
   font-size: 18px;
   margin: 5px 0;
   margin-bottom: 20px;
 }
-
 .contacts .contacts-content p {
   color: rgb(87, 87, 87);
   font-size: 15px;
   margin-bottom: 2px;
 }
-
 .contacts-info {
   display: flex;
   align-items: center;
 }
-
 .contacts-info i {
   margin: 15px 20px;
   font-size: 20px;
 }
-
 .contacts-info a i {
   margin: 0;
   margin-right: 10px;
   font-size: 15px;
 }
-
 .contacts-info a {
   display: flex;
   align-items: center;
@@ -93,12 +77,10 @@
   border-radius: 10px;
   transition: 0.3s all linear;
 }
-
 .contacts-info a:hover {
   color: white;
   background-color: green;
 }
-
 .contacts .contacts-content>div:last-child {
   border-left: 2px solid var(--mustard);
   padding-left: 20px;
@@ -106,22 +88,18 @@
   margin: 20px 0;
   text-align: justify;
 }
-
 .contacts .contacts-content {
   height: auto;
 }
-
 @media screen and (max-width:800px) {
   .contacts {
     flex-direction: column;
   }
-
   .contacts .contacts-content, .contacts .contacts-map {
     width: 100%;
     margin: 0px;
     box-shadow: none;
   }
-
   .contacts .contacts-map {
     height: 400px;
   }

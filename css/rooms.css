@@ -3,7 +3,6 @@
   max-width: 1100px;
   margin: auto;
 }
-
 .left-room-box {
   height: auto;
   width: 32%;
@@ -26,27 +25,6 @@
 .left-room-box, .right-room-box {
   margin: 10px;
 }
-@media screen and (max-width:850px) {
-  #room-Boxes {
-    padding: 20px;
-    flex-direction: column-reverse;
-  }
-
-  .left-room-box, .right-room-box {
-    margin: 0;
-    height: auto;
-  }
-
-  .left-room-box {
-    width: 100%;
-    margin-top: 20px;
-  }
-
-  .right-room-box {
-    height: auto;
-    width: 100%;
-  }
-}
 
 .left-room-box {
   display: flex;
@@ -57,8 +35,6 @@
   box-shadow: var(--light-shadow);
   height: auto;
 }
-
-
 .left-room-box .header-aboutus {
   text-align: center;
   margin: 0;
@@ -76,24 +52,6 @@
   padding: 0;
   margin-bottom: 4px;
 }
-
-.radialRect {
-  border: 1px solid grey;
-  padding: 3px 6px;
-  border-radius: 20px;
-  margin: 2px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 14px;
-}
-
-.radialRect img {
-  width: 20px;
-  height: 20px;
-  margin-right: 8px;
-}
-
 .bedIcon {
   display: flex;
   align-items: center;
@@ -106,118 +64,41 @@
   margin-top: 10px;
   transition: 0.6s all linear;
 }
-
 .bedIcon img {
   width: 15px;
   height: 15px;
 }
-
 .bedIcon i {
   font-size: 16px;
   color: var(--mustard);
   margin: 0 8px;
 }
-
 .bedContent {
   background-color: aliceblue;
   padding: 10px 20px;
   font-size: 14px;
   border-radius: 20px;
 }
-
 .amenities {
   text-align: center;
 }
-
 .amenities p {
   color: gray;
   transition: 0.5s all linear;
   text-align: center;
 }
-
 .amenities-content {
   display: flex;
   align-items: center;
   font-size: 13px;
   justify-content: center;
 }
-
 .amenities-content img {
   width: 20px;
   height: 20px;
   margin: 2px 7px;
 }
 
-@media screen and (max-width:980px) {
-  .left-room-box .header-aboutus h3 {
-    font-size: 24px;
-    margin: 0;
-    padding: 0;
-  }
-
-  .amenities-content {
-    font-size: 14px;
-  }
-
-  .amenities-content img {
-    width: 20px;
-    height: 20px;
-    margin: 0;
-    margin-right: 4px;
-  }
-
-
-}
-
-@media screen and (max-width:900px) {
-  .amenities-content {
-    font-size: 12px;
-  }
-
-  .amenities-content img {
-    width: 15px;
-    height: 15px;
-    margin: 1px 4px;
-  }
-
-
-}
-@media screen and (max-width:850px) {
-  .left-room-box {
-    background:linear-gradient(rgba(0, 0, 0, 0.544),rgba(0, 0, 0, 0.544)), url(../img/BlackBack.jpg) center center/cover no-repeat;
-    box-shadow: var(--dark-shadow);
-    cursor: pointer;
-    color: white;
-    transform: translateY(-10px);
-  }
-  
-  .left-room-box .amenities p {
-    color:rgb(226, 221, 221);
-  }
-  .left-room-box .header-aboutus p {
-    color:rgb(255, 255, 255);
-  }
-  
-  .left-room-box .btn3 {
-    border-color: var(--mustard);
-    color: var(--mustard);
-  }
-  
-  .left-room-box .btn3 {
-    color: white;
-    border-color: white;
-  }
-  .left-room-box .btn3{
-    border-color: var(--mustard);
-  }
-  .left-room-box .bedIcon{
-    background-color: white;
-  }
-  .left-room-box .bedIcon p{
-    color: var(--mustard);
-  }
-  
-}
 
 .left-room-box:hover{
   background:linear-gradient(rgba(0, 0, 0, 0.544),rgba(0, 0, 0, 0.544)), url(../img/BlackBack.jpg) center center/cover no-repeat;
@@ -286,25 +167,7 @@
   padding: 10px;
   margin-top: 10px;
 }
-@media screen and (max-width:800px) {
-  .roomContentBox{
-   display: block;
-  }
-  
-  .left-roomContentBox{
-    width: 100%;
-    border-bottom: 2px dashed rgba(128, 128, 128, 0.488);
-    padding-bottom: 10px;
-    border-right: none;
-  }
-  .right-roomContentBox{
-    width: 100%;
-  }.roomSlides{
-    width: 100%;
-    height: 300px;
-  }
 
-}
 
 .right-roomContentBox{
   text-align: center;
@@ -360,17 +223,115 @@ margin-bottom: 10px;
 {
 flex-direction: row-reverse;
 }
-
-@media screen and (max-width:850px) {
-  #room-Boxes:nth-child(even)
-{
-flex-direction:column-reverse;
-}
-}
-
 .roomSlideImg{
   transition: none !important;
 }
 .roomSlideImg2{
   transition: none !important;
+}
+@media screen and (max-width:980px) {
+  .left-room-box .header-aboutus h3 {
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .amenities-content {
+    font-size: 14px;
+  }
+
+  .amenities-content img {
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    margin-right: 4px;
+  }
+}
+@media screen and (max-width:900px) {
+  .amenities-content {
+    font-size: 12px;
+  }
+
+  .amenities-content img {
+    width: 15px;
+    height: 15px;
+    margin: 1px 4px;
+  }
+}
+@media screen and (max-width:850px) {
+  #room-Boxes {
+    padding: 20px;
+    flex-direction: column-reverse;
+  }
+
+  .left-room-box, .right-room-box {
+    margin: 0;
+    height: auto;
+  }
+
+  .left-room-box {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .right-room-box {
+    height: auto;
+    width: 100%;
+  }
+  .left-room-box {
+    background:linear-gradient(rgba(0, 0, 0, 0.544),rgba(0, 0, 0, 0.544)), url(../img/BlackBack.jpg) center center/cover no-repeat;
+    box-shadow: var(--dark-shadow);
+    cursor: pointer;
+    color: white;
+    transform: translateY(-10px);
+  }
+  
+  .left-room-box .amenities p {
+    color:rgb(226, 221, 221);
+  }
+  .left-room-box .header-aboutus p {
+    color:rgb(255, 255, 255);
+  }
+  
+  .left-room-box .btn3 {
+    border-color: var(--mustard);
+    color: var(--mustard);
+  }
+  
+  .left-room-box .btn3 {
+    color: white;
+    border-color: white;
+  }
+  .left-room-box .btn3{
+    border-color: var(--mustard);
+  }
+  .left-room-box .bedIcon{
+    background-color: white;
+  }
+  .left-room-box .bedIcon p{
+    color: var(--mustard);
+  }
+  #room-Boxes:nth-child(even)
+  {
+  flex-direction:column-reverse;
+  }
+}
+@media screen and (max-width:800px) {
+  .roomContentBox{
+   display: block;
+  }
+  
+  .left-roomContentBox{
+    width: 100%;
+    border-bottom: 2px dashed rgba(128, 128, 128, 0.488);
+    padding-bottom: 10px;
+    border-right: none;
+  }
+  .right-roomContentBox{
+    width: 100%;
+  }.roomSlides{
+    width: 100%;
+    height: 300px;
+  }
+
 }

@@ -35,66 +35,6 @@
   }
 
 
-  @media screen and (min-width:700px) {
-
-    
-    .room-img {
-    width: 80%;
-    height: 70vh;
-    margin: auto;
-    background: rgb(255, 255, 255);
-    box-shadow: var(--dark-shadow);
-    border-radius: 20px;
-    position: relative;
-    right: 60px;
-  }
-    .room-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background-color: rgb(255, 255, 255);
-    width: 70%;
-    position: relative;
-    bottom: 250px;
-    left: 200px;
-    box-shadow: var(--dark-shadow);
-    padding: 20px;
-    border-radius: 20px;
-    border: 10px solid white;
-    background: linear-gradient(#fffffff7, rgba(255, 255, 255, 0.942), #ffffff),
-    url(../img/roomsBackground.jpg) center/cover no-repeat; 
-  }
-  }
-  @media screen and (min-width:900px) {
-    .room-img {
-    width: 76%;
-    height: 73vh;
-    margin: auto;
-    background: rgb(255, 255, 255);
-    box-shadow: var(--dark-shadow);
-    border-radius: 20px;
-    position: relative;
-    right: 60px;
-  }
-    .room-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background-color: rgb(255, 255, 255);
-    width: 60%;
-    position: relative;
-    bottom: 340px;
-    left: 400px;
-    box-shadow: var(--dark-shadow);
-    padding: 20px;
-    border-radius: 20px;
-  border: 10px solid white;
-    
-  }
- 
-  }
 
 
   .room-flex {
@@ -149,51 +89,6 @@
     cursor: pointer;
     color: var(--mustard);
   }
-
-
-@media screen and (max-width:800px) {
-  .roomContainer{
-     height: 110vh;
-  }
-}
-@media screen and (max-width:700px) {
-
-  .room-img {
-    width: 90%;
-    height: 300px;
-    margin: auto;
-    background: rgb(255, 255, 255);
-    box-shadow: var(--dark-shadow);
-    border-radius: 20px;
-  }
-
-
-
-
-  .room-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background-color: white;
-    margin-top: 20px;
-    padding: 20px;
-  border: none;
-   
-  }
-
-  .room-flex {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-    
-  }
-  .roomContainer{
-  height: auto;
-  }
-
- 
-}
 .room-flex{
   margin:5px;
 
@@ -220,4 +115,104 @@
 .room-content{
   overflow: hidden;
 
+}
+@media screen and (min-width:700px) {
+
+    
+  .room-img {
+  width: 80%;
+  height: 70vh;
+  margin: auto;
+  background: rgb(255, 255, 255);
+  box-shadow: var(--dark-shadow);
+  border-radius: 20px;
+  position: relative;
+  right: 60px;
+}
+  .room-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
+  width: 70%;
+  position: relative;
+  bottom: 250px;
+  left: 200px;
+  box-shadow: var(--dark-shadow);
+  padding: 20px;
+  border-radius: 20px;
+  border: 10px solid white;
+  background: linear-gradient(#fffffff7, rgba(255, 255, 255, 0.942), #ffffff),
+  url(../img/roomsBackground.jpg) center/cover no-repeat; 
+}
+}
+@media screen and (min-width:900px) {
+  .room-img {
+  width: 76%;
+  height: 73vh;
+  margin: auto;
+  background: rgb(255, 255, 255);
+  box-shadow: var(--dark-shadow);
+  border-radius: 20px;
+  position: relative;
+  right: 60px;
+}
+  .room-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
+  width: 60%;
+  position: relative;
+  bottom: 340px;
+  left: 400px;
+  box-shadow: var(--dark-shadow);
+  padding: 20px;
+  border-radius: 20px;
+border: 10px solid white;
+  
+}
+
+}
+
+@media screen and (max-width:800px) {
+  .roomContainer{
+     height: 110vh;
+  }
+}
+@media screen and (max-width:700px) {
+
+  .room-img {
+    width: 90%;
+    height: 300px;
+    margin: auto;
+    background: rgb(255, 255, 255);
+    box-shadow: var(--dark-shadow);
+    border-radius: 20px;
+  }
+  .room-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    margin-top: 20px;
+    padding: 20px;
+  border: none;
+   
+  }
+
+  .room-flex {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    
+  }
+  .roomContainer{
+  height: auto;
+  }
+
+ 
 }

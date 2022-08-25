@@ -4,19 +4,11 @@
   top: 55%;
   right: 0;
   transform: translateY(-50%);
-  /* height:auto; */
   box-sizing: border-box;
   transition: 0.5s;
   display: flex;
 }
-
-#sideForm:hover {
-  /* right:-350px; */
-
-}
-
 .sideForm-container {
-  /* width: 300px; */
   width: 0;
   height: 450px;
   background-color: rgb(248, 249, 238);
@@ -28,7 +20,6 @@
   transition: 0.3s all linear;
   overflow: hidden;
 }
-
 .sideFormNav {
   width: 60px;
   display: flex;
@@ -37,8 +28,6 @@
   position: relative;
   height: 240px;
 }
-
-
 .sideForm-block2 {
   background-color: rgb(39, 82, 167);
   height: auto;
@@ -48,7 +37,6 @@
   display: grid;
   place-items: center;
 }
-
 .rotate270 {
   transform: rotate(270deg);
   color: white;
@@ -60,24 +48,19 @@
   letter-spacing: 1px;
   font-size: 12px;
 }
-
 .rotate270 i {
   font-size: 10px;
   margin: 4px;
 }
-
 .spaceError {
   color: rgba(240, 248, 255, 0);
 }
-
 .sideFormNav>div {
   transition: 0.3s all linear;
 }
-
 .sideFormNav>div:hover {
   cursor: pointer;
 }
-
 .sideForm-block1 {
   background-color: black;
   color: white;
@@ -86,9 +69,7 @@
   padding: 7px;
   border-top-left-radius: 10px;
   font-size: 12px;
-
 }
-
 .sideForm-block3, .sideForm-block4 {
   width: 60px;
   text-align: center;
@@ -97,7 +78,6 @@
   color: white;
   transition: 0.3s all linear;
 }
-
 .sideForm-block3 {
   background-color: lawngreen;
   transition: 0.3s all linear;
@@ -105,7 +85,6 @@
   justify-content: center;
   position: relative;
 }
-
 .sideForm-block4 {
   background-color: rgb(172, 75, 75);
   border-bottom-left-radius: 10px;
@@ -114,7 +93,6 @@
   justify-content: center;
   position: relative;
 }
-
 .sideForm-block3 .sideFormText {
   background-color: lawngreen;
 }
@@ -122,9 +100,7 @@
 .sideForm-block4 .sideFormText {
   background-color: rgb(172, 75, 75);
 }
-
 .sideFormText {
-  /* display: none; */
   display: flex;
   align-items: center;
   position: absolute;
@@ -143,38 +119,19 @@
   font-size: 16px;
   letter-spacing: 2px;
 }
-
 .sideForm-block3:hover .sideFormText {
   transform: translateX(-82px);
-
 }
-
 .sideForm-block4:hover {
   border-radius: 0;
 }
-
 .sideForm-block4:hover .sideFormText {
   transform: translateX(-82px);
-
 }
-
 .sideForm-block3:hover, .sideForm-block4:hover {
   cursor: pointer;
 }
 
-.hideSideFormBlocks .sideForm-block2, .hideSideFormBlocks .sideForm-block3, .hideSideFormBlocks .sideForm-block4 {
-  transform: translateX(50px);
-}
-
-.hideSideFormBlocks .sideForm-block1 {
-  border-bottom-left-radius: 10px;
-  background-color: var(--mustard);
-}
-
-.hideSideFormBlocks .sideForm-block1:hover {
-  cursor: pointer;
-  background-color: black;
-}
 
 .sideForm-block1:hover {
   background-color: var(--mustard);
