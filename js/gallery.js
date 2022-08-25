@@ -22,8 +22,10 @@ const GallerySource=[
   },
 ]
 const galleryContainer=document.querySelector('#gallery-images');
-console.log(galleryContainer);
+// console.log(galleryContainer);
 const btnGalleryContainer=document.querySelector('.gallery-types');
+
+
 displayGalleryMenu();
 displayAllImages(GallerySource);
 
@@ -31,10 +33,7 @@ displayAllImages(GallerySource);
 function displayAllImages(galleryItems) {
 
   let displayItems = galleryItems.map(function (list) {
-
-
     // DYNAMICALLY ADDING DATA 
-
     return ` <div  class="gallery-box">
                <img class="clickToOpen" src="${list.src}" alt="${list.alt}">
               </div> `;
@@ -60,29 +59,29 @@ const galleyCategories=GallerySource.reduce(function(values,item){
  },
  ["All"]
  );
-console.log(galleyCategories);
+// console.log(galleyCategories);
 
 
 // ADDING ARRAY DATA TO NAVBAR AS BTNS
 const categoryBtns = galleyCategories
   .map(function (btn) {
-    return `<li><button type="button" class="btn" data-id=${btn}>
+    return `<li><button type="button" onclick="sleep()" class="btn" data-id=${btn}>
         ${btn}
       </button><li>`;
   })
   .join("");
-  console.log(categoryBtns);
+
+  // console.log(categoryBtns);
   btnGalleryContainer.innerHTML=categoryBtns;
-
   const filterGalleryBtns=btnGalleryContainer.querySelectorAll('.btn');
-
   filterGalleryBtns.forEach(function(btn){
    
     btn.addEventListener("click",function(e){
+  
+
       filterGalleryBtns.forEach((btn2)=>{
         btn2.style.background='none';
-      btn2.style.borderColor='white';
-
+        btn2.style.borderColor='white';
        })
       btn.style.background='var(--mustard)';
       btn.style.borderColor='var(--mustard)';
@@ -105,3 +104,4 @@ const categoryBtns = galleyCategories
 
 
 }
+

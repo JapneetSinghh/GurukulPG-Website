@@ -95,7 +95,7 @@ function setFooter() {
 }
 
 function setNavbar() {
-  console.log(navbarContainer);
+  // console.log(navbarContainer);
 navbarContainer.innerHTML='';
 for(let i=0;i<=navBarLinks.length-1;i++){
 const navObj=navBarLinks[i];

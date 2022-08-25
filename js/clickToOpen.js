@@ -1,6 +1,18 @@
 setTimeout(() => {
-  const images = document.querySelectorAll('.clickToOpen');
+  clickToOpenImages();
 
+
+}, 2000);
+
+function sleep(){
+  setTimeout(()=>{
+    clickToOpenImages();
+
+  },300)
+}
+
+function clickToOpenImages(){
+  const images = document.querySelectorAll('.clickToOpen');
 
 const activeImage = document.querySelector('.modalOpenImg');
 const modalContainer = document.querySelector('.modalForClickImage');
@@ -100,4 +112,4 @@ function setAnimation() {
     modalCloseBtn.style.opacity='1';
   }, 600);
 }
-}, 2000);
+}
