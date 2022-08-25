@@ -13,9 +13,9 @@ var Navstatus = true;
 arrowBtn.addEventListener('click', () => {
   console.log('hi i am arrow close btn');
   if (Navstatus === true) {
-    block2.style.transform = 'translateX(50px)';
-    block3.style.transform = 'translateX(50px)';
-    block4.style.transform = 'translateX(50px)';
+    block2.style.transform = 'translateX(60px)';
+    block3.style.transform = 'translateX(60px)';
+    block4.style.transform = 'translateX(60px)';
     arrowBtn.innerHTML = ' <i class="fa-solid fa-arrow-left"></i>'
     closeSideForm();
     setTimeout(() => {
@@ -65,7 +65,7 @@ function closeSideForm() {
 }
 // FORM OPEN
 function openSideForm() {
-  sideForm.style.width = '300px';
+  sideForm.style.width = '350px';
   block2.style.background = 'rgb(43, 43, 65)';
   opacity.style.opacity='1';
   setTimeout(()=>{
