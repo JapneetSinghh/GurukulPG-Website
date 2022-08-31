@@ -73,10 +73,11 @@ a {
 .links ul li {
   display: inline-block;
   padding: 5px 20px;
-  font-size: 14px;
+  font-size: 16px;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
+
 .links a {
   color: white;
   transition: var(--transition);
@@ -87,18 +88,15 @@ a {
 
 /* 3 ICONS HEADER BASE */
 .headerBase {
-
+ padding: 30px 0;
   background-color: rgb(226, 229, 229);
-
 }
-
 .headerBaseContainer {
-  padding: 35px 0;
+  padding: 5px 0;
   display: flex;
   margin: auto;
   max-width: 1100px;
 }
-
 .headerBaseContainer img {
   width: 60px;
   height: 60px;
@@ -109,12 +107,15 @@ a {
 .headerBaseContainer>div {
   width: 33%;
   padding: 13px 8px;
-
 }
 
 .flex {
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+.headerBase .flex h3{
+  color: #333;
 }
 
 /* SIDEBAR */
@@ -645,7 +646,7 @@ footer .social-icons ul li a:hover {
 
 }
 .gallery {
-  background: linear-gradient(#000000e2, rgba(0, 0, 0, 0.776), #000000c2),
+  background: linear-gradient(#00000069, rgba(0, 0, 0, 0.558), #00000077),
     url(../img/slide1.jpg) center/cover no-repeat;
   height: auto;
   padding: 30px 0;
@@ -1229,6 +1230,7 @@ cursor: pointer;
   .prev-next-btns{
     text-align: center;
     display: flex;
+    margin-right: 40px;
   }
   .prev-next-btns button{
     background-color: var(--mustard);
@@ -1371,6 +1373,31 @@ border: 10px solid white;
 
  
 }
+#contact-top{
+  display: flex;
+  /* background-color: rgb(239, 239, 239); */
+  background-color: var(--mustard);
+  padding: 10px;
+}
+#contact-top>div{
+width: 33%;
+display: flex;
+flex-direction: column;
+text-align: center;
+padding:20px;
+}
+
+#contact-top i{
+  font-size: 24px;
+  color: var(--mustard);
+  margin-bottom: 10px;
+  color: white;
+}
+#contact-top p{
+  font-size: 15px;
+  color: white;
+}
+
 @media screen and (max-width:1000px) {
   .flex-gallery {
     display: grid;
@@ -1409,7 +1436,13 @@ border: 10px solid white;
   }
 }
 @media screen and (max-width:850px) {
+  #contact-top{
+    flex-direction: column;
+  }
+  #contact-top>div{
+  width: 100%;
 
+  }
   /* TOP  BAR LOGO AND TOGGLE BTN*/
   .topBar {
     padding: 10px 25px;
@@ -1715,3 +1748,4 @@ border: 10px solid white;
   }
 
 }
+
