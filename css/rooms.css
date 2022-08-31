@@ -19,7 +19,6 @@
   transition: 0.5s all linear;
   background-color: rgb(255, 253, 249);
   width: 68%;
-  padding: 10px;
   box-shadow: var(--dark-shadow);
 }
 .left-room-box, .right-room-box {
@@ -135,13 +134,15 @@
 }
 
 .roomSlides{
-  width: 100%;
+  width: 500%;
   height: 75%;
   object-fit: cover;
   transition: 0.4s all linear;
+  background-color: #333;
+
 }
+
 .roomSlides img{
-  width: 100%;
   height: 100%;
   object-fit: cover;
 }
@@ -185,6 +186,7 @@ margin-bottom: 10px;
 
 .roomSlides img{
   transition: 0.4s all linear;
+  width: 100%;
 }
 
 
@@ -197,7 +199,7 @@ margin-bottom: 10px;
   border: transparent;
   font-size: 25px;
   color: white;
-  padding:0 20px;
+  padding:30px;
   transition: 0.3s all linear;
 }
 .roomSlidePrev:hover,.roomSlideNext:hover{
@@ -214,20 +216,20 @@ margin-bottom: 10px;
 }
 .right-room-box{
   position: relative;
-}
-
-.roomSlide .clickToOpen{
-  transition: none;
+  overflow: hidden;
 }
 #room-Boxes:nth-child(even)
 {
 flex-direction: row-reverse;
 }
 .roomSlideImg{
-  transition: none !important;
+  width: 100%;
+  transition: 0.3s all linear;
 }
 .roomSlideImg2{
-  transition: none !important;
+  width: 100%;
+  transition: 0.3s all linear;
+
 }
 @media screen and (max-width:980px) {
   .left-room-box .header-aboutus h3 {
@@ -275,7 +277,6 @@ flex-direction: row-reverse;
   }
 
   .right-room-box {
-    height: auto;
     width: 100%;
   }
   .left-room-box {
@@ -329,9 +330,11 @@ flex-direction: row-reverse;
   }
   .right-roomContentBox{
     width: 100%;
-  }.roomSlides{
-    width: 100%;
-    height: 300px;
   }
+  .roomSlides{
+    height: 300px;
+    object-fit: cover;
+  }
+
 
 }
