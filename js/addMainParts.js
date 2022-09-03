@@ -39,9 +39,14 @@ const navBarLinks=[
 
 const footerContainer = document.getElementsByTagName('footer');
 const navbarContainer = document.querySelector('.navbar-dynamic');
+const contactTop=document.querySelector('#contact-top');
+
+
+
 window.addEventListener('DOMContentLoaded', () => {
   setNavbar();
   setFooter();
+  addContactTop();
 })
 function setFooter() {
   footerContainer[0].innerHTML = `<div class="footer-header container">
@@ -103,3 +108,23 @@ navbarContainer.innerHTML+=`<li><a href="${navObj.href}">${navObj.name}</a></li>
 }
 }
 
+
+function addContactTop(){
+  contactTop.innerHTML=`    <div class="contacts-info">
+  <h3 style="margin: 0;"><i class="fa-solid fa-phone"></i></h3>
+  <p>9313565406 &nbsp;&nbsp; 9911-620-684</p>
+</div>
+<div class="contacts-info">
+  <h3><i class="fa-solid fa-location-dot"></i> </h3>
+  <div>
+    <p style="font-size:14px ;line-height: 17px;">A-38,39,40, Old Pankha Road, Opp
+      Metro Pillar No.641, Uttam Nagar East, New Delhi, Delhi 110059</p>
+  </div>
+</div>
+<div class="contacts-info">
+  <h3 style="margin: 0;"><i class="fa-solid fa-envelope"></i></h3>
+  <div>
+    <p>info@gurukulpg.in</p>
+  </div>
+</div>`;
+}

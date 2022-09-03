@@ -7,21 +7,16 @@ toggleBtn.addEventListener('click',()=>{
   console.log(navBar);
   console.log('hi')
   navBar.classList.toggle('show-navbar');
-  console.log(navBar);
-
-
 });
 
 closeBtn.addEventListener('click',()=>{
   console.log(navBar);
   console.log('hi')
   navBar.classList.toggle('show-navbar');
-
 })
 
 
 // Fixed Navbar
-
 window.addEventListener("scroll", function () {
   const scrollHeight = window.pageYOffset;
   const navHeight = navBar.getBoundingClientRect().height;

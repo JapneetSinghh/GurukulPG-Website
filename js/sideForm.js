@@ -1,4 +1,3 @@
-
 const arrowBtn = document.querySelector('.sideForm-block1');
 const block2 = document.querySelector('.sideForm-block2');
 const block3 = document.querySelector('.sideForm-block3');
@@ -11,7 +10,6 @@ var Navstatus = true;
 
 // OPEN CLOSE OF SIDE FORM BAR
 arrowBtn.addEventListener('click', () => {
-  console.log('hi i am arrow close btn');
   if (Navstatus === true) {
     block2.style.transform = 'translateX(60px)';
     block3.style.transform = 'translateX(60px)';
@@ -82,5 +80,6 @@ formCloseBtn.addEventListener('click', () => {
 window.addEventListener('DOMContentLoaded', () => {
   setTimeout(() => {
     openSideForm();
-  }, 1500);
+  }, 4000);
 });
+

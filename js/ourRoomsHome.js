@@ -4,28 +4,28 @@ const roomsData = [
     RoomType: 'With AC',
     RoomContent: `
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem sit error saepe, ex ratione rem facilis magnam aut quae earum nihil maiores eveniet adipisci sunt repellendus inventore id quibusdam blanditiis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et officiis odio non, cupiditate quam fuga blanditiis dignissimos minima dolorem maiores!`,
-    RoomImg: './img/gallery/1.jpg',
+RoomImg: './img/Single Occupancy/Gurukul-pg-uttamNagar-Janakpuri-single-occupancy-16.jpg',
   },
   {
     RoomName: 'Double Occupancy',
     RoomType: 'With AC',
     RoomContent: `
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem sit error saepe, ex ratione rem facilis magnam aut quae earum nihil maiores eveniet adipisci sunt repellendus inventore id quibusdam blanditiis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et officiis odio non, cupiditate quam fuga blanditiis dignissimos minima dolorem maiores!`,
-    RoomImg: './img/gallery/3.jpg',
+    RoomImg: './img/Double Occupancy/Gurukul-pg-uttamNagar-Janakpuri-double-occupancy-11.jpg',
   },
   {
     RoomName: 'Single Occupancy',
     RoomType: 'With Cooler',
     RoomContent: `
 Loreore id quibusdam blanditiis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et officiis odio non, cupiditate quam fuga blanditiis dignissimos minima dolorem maiores!am aut quae earum nihil maiores eveniet adipisci sunt repellendus invent`,
-    RoomImg: './img/gallery/4.jpg',
+RoomImg: './img/Single Occupancy/Gurukul-pg-uttamNagar-Janakpuri-single-occupancy-5.jpg'
   },
   {
     RoomName: 'Double Occupancy',
     RoomType: 'With Cooler',
     RoomContent: `
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem sit error saepe, ex ratione ing elit. Et officiis odio non, cupiditate quam fuga blanditiis dignissimos minima dolorem maiorore id quibusdam blanditiis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et officiis odio non, cupiditate quam fuga blanditiis dignissimos minima dolorem maiores!es!`,
-    RoomImg: './img/gallery/5.jpg',
+    RoomImg: './img/Double Occupancy/Gurukul-pg-uttamNagar-Janakpuri-double-occupancy-4.jpg',
   },
 ]
 
