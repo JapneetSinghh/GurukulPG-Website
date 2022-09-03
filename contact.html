@@ -4,6 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="Content-Security-Policy"
+    content="script-src *  'unsafe-inline' 'unsafe-eval' https://checkout.dibspayment.eu https://www.google-analytics.com https://maps.google.com;">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,7 +28,7 @@
   <meta name="keywords" content="Gurukul PG for Boys, PG in Delhi, PG in Janakpuri, PG in Uttam Nagar, PG in Vikaspuri, PG near Uttam Nagar Metro Station, PG near Akash Institute, PG near Physics Wallah, PG near Target, PG near me, PG for Boys, Book 2-share in Gurukul PG,  Book 1-share in Gurukul PG, Single Occupancy Room at Gurukul PG, Hostel In Delhi, Hostel in Uttam Nagar, Hostel in Janakpuri, Breakfast Lunch Dinner in PG, Gurukul PG Rooms, Gurukul PG facilities, Best Pg in Uttam Nagar, Best Pg in Delhi, Pg for students in Delhi,
 Hostel Near Uttam Nagar Metro station, Hostel near Akash Institute,PG near Pankha Road">
   <meta name="author" content="Gurukul PG">
-
+  <meta name="format-detection" content="telephone=no">
   <meta property="og:title" content="Reach Gurukul PG Opposite Uttam Nagar Metro Station and Bus Terminal" />
   <meta property="og:description"
     content="Navigating to Gurukul PG is quite easy as it is opposite to Uttam Nagar East Metro station and Bus Terminal. Location of our PG is best suited to the students of Akash Institute, Physics Wallah, Target, Vidya Mandir, Narayana as they can reach there within 5 minutes of walking" />
@@ -42,7 +44,7 @@ Hostel Near Uttam Nagar Metro station, Hostel near Akash Institute,PG near Pankh
 </head>
 
 <body>
-  <header id="header" class="subpage menu">
+  <header id="header" class="subpage contactPage">
     <nav id="navbar-container">
       <div class="topBar">
         <img src="./img/logo.png" alt="Gurukul PG For Boys"> <button class="nav-toggle">
@@ -130,7 +132,9 @@ Hostel Near Uttam Nagar Metro station, Hostel near Akash Institute,PG near Pankh
 
 
   </section>
+  <div id="contact-top">
 
+  </div>
 
   <section class="menu-header-aboutus">
     <h3>Our <span class="secondry-color-red"> 7 Day</span> Menu Plan</h3>
@@ -148,44 +152,74 @@ Hostel Near Uttam Nagar Metro station, Hostel near Akash Institute,PG near Pankh
 
         </div>
         <div class="contact-flex-form">
-          <div>
-            <h2>Get In Touch</h2>
-            <p>Lorem ipsum dolor sit. Lorem, ipsum dolor . Lorem ipsum dolor sit amet consectetur.</p>
-            <div class="flex-input">
-              <div style="margin-right:10px ;" class="input-box">
-                <i class="fa-solid fa-user"></i>
-                <input type="text" placeholder="Name">
+          <!-- form begins -->
+          <form action="myForm.php" id="myForm" name="myForm" method="post">
+            <div>
+              <h2>Get In Touch</h2>
+              <p>Lorem ipsum dolor sit. Lorem, ipsum dolor . Lorem ipsum dolor sit amet consectetur.</p>
+              <div class="errorBox"
+                style="padding:8px; text-align: center;background-color:rgb(198, 9, 9); margin-bottom: 10px;border-radius: 10px; transition: 0.3s all linear;opacity: 0;">
+                <p class="errorContent"
+                  style="text-transform: capitalize;font-size:14px;letter-spacing:1px;color:white; margin: 0;">Error</p>
               </div>
-              <div class="input-box">
+              <div class="flex-input">
+                <div style="margin-right:10px ;" class="input-box">
+                  <i class="fa-solid fa-user"></i>
+                  <!-- NAME -->
+                  <input type="text" name="name" id="myName" placeholder="Name">
+                </div>
+
+                <div class="input-box">
+                  <i class="fa-solid fa-phone"></i>
+                  <!-- PHONE NUMBER -->
+                  <input type="text" maxlength="10" name="phone" id="myPhone" pattern="\ *\+?\d+" required name=""
+                    title="Only numbers and '+' are accepted" id="" class="register-input-val form-control input-lg"
+                    placeholder=" Mobile Number...">
+                </div>
+
+              </div>
+              <div style="width: 100%;" class="input-box">
                 <i class="fa-solid fa-phone"></i>
-                <input type="text" maxlength="13" pattern="\ *\+?\d+" required name=""
-                  title="Only numbers and '+' are accepted" id="" class="register-input-val form-control input-lg"
-                  placeholder=" Mobile Number...">
+                <!-- EMAIL -->
+                <input style="width: 80%;" name="email" type="email" id="myEmail" placeholder="Email">
               </div>
+              <!-- ROOM SELECTION -->
+              <select >
+                <option selected value="">Single Occupancy With AC</option>
+                <option value="">Single Occupancy With Water Cooler</option>
+                <option value="">Double Occupancy With AC</option>
+                <option value="">Double Occupancy With Water Cooler</option>
+              </select>
+              <!-- MESSAGE -->
+              <textarea id="subject" name="message" placeholder="Any Message for us..."></textarea>
 
             </div>
-            <div style="width: 100%;" class="input-box">
-              <i class="fa-solid fa-phone"></i>
-              <input style="width: 80%;" type="text" maxlength="13" pattern="\ *\+?\d+" required name=""
-                title="Only numbers and '+' are accepted" id="" class="register-input-val form-control input-lg"
-                placeholder=" Mobile Number...">
+            <!-- CAPTCHA -->
+            <div class="wrapper"></div>
+            <h2 id="status" style="color: #ee7e6a;"></h2>
+
+            <div style="display: flex; align-items: center;">
+              <div>
+                <input type="text" oncopy="return false" oncut="return false" onpaste="return false" readonly id="generated-captcha">
+              </div>
+              <div>
+                <input type="text" id="entered-captcha" placeholder="Enter captcha..">
+              </div>
+              <button style="padding:10px ;" id="captchabtn" type="button" onclick="check()">
+                check
+              </button>
+              <button id="captchabtn" type="button" onclick="generate()" id="gen">
+                Generate New
+              </button>
             </div>
-
-            <select>
-              <option value="">Single Occupancy With AC</option>
-              <option value="">Single Occupancy With Water Cooler</option>
-              <option value="">Double Occupancy With AC</option>
-              <option value="">Double Occupancy With Water Cooler</option>
-            </select>
-            <textarea id="subject" name="subject" placeholder="Any Message for us..."></textarea>
-            <input class="btn2 SideformSubmitbtn" type="submit" value="Submit">
-          </div>
-
+          </form>
+          <!-- SUBMIT FORM -->
+          <button id="submitForm" class="btn2">Submit Form</button>
         </div>
 
       </div>
     </article>
-    <article class="contacts">
+     <article class="contacts"> 
       <div class="contacts-content">
         <h2>Contacts</h2>
         <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur.</p>
@@ -224,8 +258,7 @@ Hostel Near Uttam Nagar Metro station, Hostel near Akash Institute,PG near Pankh
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3394.6110882843313!2d77.06414628665529!3d28.624874784245357!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d04db4d59eaff%3A0x863f3c5848eac7bb!2sCompetition%20Gurukul!5e0!3m2!1sen!2sin!4v1661332977309!5m2!1sen!2sin"
           style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
-    </article>
-
+    </article> 
   </section>
 
   <br>
@@ -285,8 +318,7 @@ Hostel Near Uttam Nagar Metro station, Hostel near Akash Institute,PG near Pankh
   <script src="./js/addMainParts.js"></script>
   <script src="./js/navbar.js"></script>
   <script src="./js/clickToOpen.js"></script>
-  <script src="./js/roomSlider.js"></script>
-  <script src="./js/clickToOpen.js"></script>
+  <script src="./js/contactFormValidation.js"></script>
 
 
 </body>

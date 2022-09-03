@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="format-detection" content="telephone=no">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -38,7 +39,7 @@ Hostel Near Uttam Nagar Metro station, Hostel near Akash Institute,PG near Pankh
 </head>
 
 <body>
-  <header id="header" class="subpage menu">
+  <header id="header" class="subpage mealsPage">
     <nav id="navbar-container">
       <div class="topBar">
         <img src="./img/logo.png" alt="Gurukul PG For Boys">        <button class="nav-toggle">
@@ -98,23 +99,7 @@ Hostel Near Uttam Nagar Metro station, Hostel near Akash Institute,PG near Pankh
   </header>
     <!-- CONTACT TOP -->
     <section id="contact-top">
-      <div class="contacts-info">
-        <h3 style="margin: 0;"><i class="fa-solid fa-phone"></i></h3>
-        <p>90155-96280 &nbsp;&nbsp; 9911-620-684</p>
-      </div>
-      <div class="contacts-info">
-        <h3><i class="fa-solid fa-location-dot"></i> </h3>
-        <div>
-          <p style="font-size:14px ;line-height: 17px;">A-38,39,40, Old Pankha Road, Opp
-            Metro Pillar No.641, Uttam Nagar East, New Delhi, Delhi 110059</p>
-        </div>
-      </div>
-      <div class="contacts-info">
-        <h3 style="margin: 0;"><i class="fa-solid fa-envelope"></i></h3>
-        <div>
-          <p>info@gurukulpg.in</p>
-        </div>
-      </div>
+
     </section>
   <!-- MODAL FOR IMAGES -->
   <section class="modalForClickImage">
@@ -135,32 +120,81 @@ Hostel Near Uttam Nagar Metro station, Hostel near Akash Institute,PG near Pankh
   </section>
   <!-- SIDE FORM -->
   <section id="sideForm">
+    <style>
+      .error {
+        border: none;
+      }
+
+      .noError {
+        border: none;
+      }
+    </style>
     <div style="background-color:white ;" class="sideForm-container">
       <div class="opacity-control">
+
         <div class="sideForm-top">
           <p class="closeSideForm"><i class="fas fa-times"></i></p>
-          <img class="clickToOpen" src="./img/logo.png" alt="Gurukul PG Breakfast, Lunch and Dinner">
+          <img src="./img/logo.png" alt="Gurukul PG For Boys">
         </div>
         <div class="section-header">
+          <div class="errorBox"
+            style="padding:0px; text-align: center;border-radius: 10px; transition: 0.3s all linear;">
+            <p class="errorContent"
+              style="text-transform: capitalize;font-size:14px;letter-spacing:1px;color:red; margin: 0;"></p>
+          </div>
           <h3>Book Your Room Now</h3>
           <p>We will contact you within 24 hours</p>
-          <form id="sideContactForm" action="action_page.php">
-            <input type="text" id="fname" name="firstname" placeholder="Your name..">
-            <input type="text" maxlength="13" pattern="\ *\+?\d+" required name=""
-              title="Only numbers and '+' are accepted" id="" class="register-input-val form-control input-lg"
-              placeholder=" Mobile Number...">
-            <select id="country" name="country">
+
+          <form id="sideContactForm" name="myForm" action="myForm.php" method="post">
+
+            <input type="text" id="myName" name="name" placeholder="Your name..">
+            <input type="text" id="myPhone" maxlength="10" name="phone" placeholder=" Mobile Number...">
+            <input type="email" name="email" id="myEmail" placeholder=" Email...">
+
+            <!-- <label for="country">Select Room</label> -->
+            <select id="country" name="requirment">
               <option value="">Single Occupancy With AC</option>
               <option value="">Single Occupancy With Water Cooler</option>
               <option value="">Double Occupancy With AC</option>
               <option value="">Double Occupancy With Water Cooler</option>
             </select>
-            <textarea id="subject" name="subject" placeholder="Any Message for us..."></textarea>
-            <input class="SideformSubmitbtn" type="submit" value="Submit">
+
+            <textarea id="subject" name="message" placeholder="Any Message for us..."></textarea>
+            <!-- CAPTCHA -->
+            <div class="wrapper"></div>
+            <h2 id="status" style="color: #ee7e6a;font-size: 13px;margin-bottom: 2px;"></h2>
+
+            <div style="display: flex; align-items: center; justify-content: space-between;">
+              <div>
+                <input oncopy="return false" oncut="return false" onpaste="return false" style="font-size: 18px;" type="text" readonly id="generated-captcha">
+              </div>
+              <div>
+                <input type="text" id="entered-captcha" placeholder="Enter captcha..">
+              </div>
+            </div>
+            <div style="display: flex;margin:3px ; justify-content: space-between;">
+              <button style="font-size:10px ;padding:4px 10px;margin:1px" id="captchabtn" type="button"
+                onclick="check()">
+                check
+              </button>
+              <button style="font-size:10px ;padding:0px 10px;margin:1px" id="captchabtn" type="button"
+                onclick="generate()" id="gen">
+                Generate New
+              </button>
+            </div>
+
           </form>
+          <button class="SideformSubmitbtn" id="submitForm">Submit Form</button>
+
+
         </div>
+
+
       </div>
+
+
     </div>
+
     <!-- SIDE NAVBAR -->
     <div class="sideFormNav">
       <div class="sideForm-block1">
@@ -272,8 +306,9 @@ Hostel Near Uttam Nagar Metro station, Hostel near Akash Institute,PG near Pankh
   <script src="./js/addMainParts.js"></script>
   <script src="./js/navbar.js"></script>
   <script src="./js/sideForm.js"></script>
-  <script src="./js/clickToOpen.js"></script>
   <script src="./js/menu.js"></script>
+  <script src="./js/clickToOpen.js"></script>
+  <script src="./js/contactFormValidation.js"></script>
 
 </body>
 
