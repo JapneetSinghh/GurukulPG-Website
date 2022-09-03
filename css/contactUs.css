@@ -199,6 +199,10 @@ letter-spacing: 1px;
   height: 26px;
   color: #333;
 }
+select{
+  color: rgb(24, 22, 22);
+
+}
 
 .input-box {
   width: 50%;
@@ -210,6 +214,7 @@ letter-spacing: 1px;
   align-items: center;
   align-items: center;
 }
+
 
 .input-box i {
   color: rgb(157, 157, 157);
@@ -230,6 +235,22 @@ textarea:focus, input:focus {
 
 textarea, input {
   columns: gray;
+}
+.error{
+  border: 1px solid rgb(182, 6, 6);
+}
+.error i,.error input{
+  color: rgb(182, 6, 6);
+}
+.noError{
+  border: 1px solid rgb(59, 182, 6);
+}
+.noError i,.noError input{
+  color: rgb(59, 182, 6);
+}
+::placeholder{
+  font-size: 14px;
+  color: rgb(158, 155, 155);
 }
 
 @media screen and (max-width:750px) {
@@ -270,15 +291,4 @@ textarea, input {
   .contact-form-section {
     box-shadow:none;
   }
-}
-.contact-flex-img {
-  background:linear-gradient(rgba(0, 0, 0, 0.435),black),url(../img/BlackBack.jpg) center/cover no-repeat;
-  color:white;
-  display: grid;
-  place-items: center;
-}
-.contact-flex-img h1{
-  width: 80%;
-  font-size: 40px;
-  text-align: center;
 }
