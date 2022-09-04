@@ -5,7 +5,7 @@ const data = [
      custName:"Yash Tiwari",
      custLocn:"Uttar Pradesh",
      rating:`<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>`,
-     review:"nt animi! Quibusdam obcaecati corporis totam eaque magnam illo impedit et harum nemo blanditiis inventore ipsa natus distinctio fuga, rerum ex veritatis minus dicta? Aperiam!nt animi! Quibusdam obcaecati corporis totam eaque magnam illo impedit et harum nemo blanditiis inventore ipsa natus distinctio fuga, rerum ex veritatis minus dicta? Aperiam!"
+     review:"I have been living in Gurukul PG for the last 2 years preparing for the UPSC exam, and have experienced a stay-at-home feeling at this PG. The people working in pg are very cooperative and supportive. Food and Hygiene are taken well care off. The rooms are well-ventilated and clean. Overall facilities that this PG provides are remarkable in every sense. I would recommend it to everyone who wishes to have a pleasant, safe stay here"
   },
   {
      id: 2,
@@ -13,7 +13,7 @@ const data = [
      custName:"Japneet Singh",
      custLocn:"Janakpuri, New Delhi",
      rating:`<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>`,
-     review:"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati consequuntur illo id? Incidunt in non deserunt animi! Quibusdam obcaecati corporis totam eaque magnam illo impedit et harum nemo blanditiis inventore ipsa natus distinctio fuga, rerum ex veritatis minus dicta? Aperiam! "
+     review:"Location of the PG is a very good metro station and bus terminal both are just in front of PG, rooms are spacious and well ventilated...Food is not like other PG’s, the food here is clean, warm and yummy, we can access the hostel kitchen anytime for making Maggi, coffee, tea, etc. Washrooms are cleaned daily. Their charges are also very nominal. I will definitely recommend it."
   },
   {
      id: 3,
@@ -21,7 +21,7 @@ const data = [
      custName:"Saarthak Trikha",
      custLocn:"Kanpur",
      rating:`<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>`,
-     review:"Aiam!nt animi! Quibusdam obcaecati corporis totam eaque magnam illo impedit et harum nemo blanditiis inventore ipsa natus distinctio fuga, rerum ex veritatis minus dicta? Aperiam!"
+     review:"Gurukul PG is one of the best PGs in Uttam Nagar, Janakpuri. For a reasonable price, Gurukul PG provides clean, furnished rooms and good food. The staff is very friendly and has helped me tremendously during my first stay in Delhi. The PG is located at a very good location which has all the coaching institutes, shops, restaurants, hospital within 100m radius. I would certainly recommend it for students or bachelors looking for a suitable PG within affordable limits."
   },
   {
      id: 4,
@@ -29,7 +29,7 @@ const data = [
      custName:"Harshjeet Singh",
      custLocn:"Bhiwadi, Haryana",
      rating:`<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>`,
-     review:"Aiam!nt animi! Quibusdam obcaecati corporis totam eaque magnam illo impedit et harum nemo blanditiis inventore ipsa natus distinctio fuga, rerum ex veritatis minus dicta? Aperiam!"
+     review:"Completed my 3 years of college while staying in Gurukul PG...during my first days in Delhi  I have faced many difficulties in searching for good pg. Had to shift many times.. but once I get into this PG my search was over.Gurukul PG provides homely comfort and clean and spacious rooms with housekeeping that cleans every room every day. Food is very good and changes every day. PG has a 7-day menu plan that serves different meals everyday. Travelling to college was very easy as PG is just opposite to metro station. "
   },
   {
      id: 5,
@@ -37,7 +37,7 @@ const data = [
      custName:"Ramanpreet Singh",
      custLocn:"Amritsar, Punjab",
      rating:`<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>`,
-     review:"Aiam!nt animi! Quibusdam obcaecati corporis totam eaque magnam illo impedit et harum nemo blanditiis inventore ipsa natus distinctio fuga, rerum ex veritatis minus dict harum nemo blanditiis inventore ipsa natus distinctio fuga, rerum ex veritatis minus dict harum nemo blanditiis inventore ipsa natus distinctio fuga, rerum ex veritatis minus dicta? Aperiam!"
+     review:"Very Easy to commute, PG is just opp to metro station and bus terminal. I was living in this PG for 2 years studying at Akash Institute (50m away from PG) and it was a great experience. The staff takes care of their guests just like family. Pg food is not just any PG food it's hygienic and delicious. Washrooms are clean, rooms are cleaned daily and every day we get something new to eat.      "
   },
   {
      id: 6,
@@ -45,15 +45,7 @@ const data = [
      custName:"Ravindar Kumar",
      custLocn:"Patna, Bihar",
      rating:`<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>`,
-     review:"Aiam!nt animi! Quibusdam obcaecati corporis totam eaque magnam illo impedit et harum nemo blanditiis inventore ipsa natus distinctio fuga, rerum ex veritatis minus dict harum nemo blanditiis inventore ipsa natus distinctio fuga, rerum ex veritatis minus dict harum nemo blanditiis inventore ipsa natus distinctio fuga, rerum ex veritatis minus dicta? Aperiam!"
-  },
-  {
-     id: 7,
-     img: "./img/testimonials/7.jpg",
-     custName:"Lakshay Khurana",
-     custLocn:"Jaipur, Rajasthan",
-     rating:`<i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>`,
-     review:"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati consequuntur illo id? Incidunt in non deserunt animi! Quibusdam obcaecati corporis totam eaque magnam illo impedit et harum nemo blanditiis inventore ipsa natus distinctio fuga, rerum ex veritatis minus dicta? Aperiam! "
+     review:"Found this paying guest on Google and was really happy how it turned out to be. The hygiene and safety are well maintained. The rooms are great and spacious. It's better than renting a flat as you get all facilities and comfort here too. Their charges are also very nominal. I will definitely recommend it."
   }
 ];
 

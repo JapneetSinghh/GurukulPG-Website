@@ -3,35 +3,61 @@ const roomsData = [
     RoomName: 'Single Occupancy',
     RoomType: 'With AC',
     RoomContent: `
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem sit error saepe, ex ratione rem facilis magnam aut quae earum nihil maiores eveniet adipisci sunt repellendus inventore id quibusdam blanditiis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et officiis odio non, cupiditate quam fuga blanditiis dignissimos minima dolorem maiores!`,
-RoomImg: './img/Single Occupancy/Gurukul-pg-uttamNagar-Janakpuri-single-occupancy-16.jpg',
+    Gurukul PG offer fully furnished rooms that are installed with air conditioners for your comfort. Our rooms cover enough space for your personal bed, almirah, table and chair which is completely perfect for your study routine along with a closet for all your personal needs. Our PG offers single occupancy rooms that includes a variety of three course proper meals (breakfast, lunch, and dinner) with weekly menu revisions, premium furnishings, free wifi, an open gym, authorized parking, Cctv surveillance, housekeeping, and helpful staff to make your stay as hassle-free as possible, specifically created for working professionals and students.
+    `,
+    RoomImg: './img/Single Occupancy/Gurukul-pg-uttamNagar-Janakpuri-single-occupancy-16.jpg',
   },
   {
     RoomName: 'Double Occupancy',
     RoomType: 'With AC',
     RoomContent: `
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem sit error saepe, ex ratione rem facilis magnam aut quae earum nihil maiores eveniet adipisci sunt repellendus inventore id quibusdam blanditiis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et officiis odio non, cupiditate quam fuga blanditiis dignissimos minima dolorem maiores!`,
+    Gurukul PG offers  <span style="font-size:18px" class="secondry-color-red">
+     Double Occupancy Rooms With AC</span>
+      that include a variety of three course proper meals (breakfast, lunch, and dinner) with weekly menu revisions, premium furnishings,   
+    <span style="font-size:18px" class="secondry-color-red">
+    Maintained and Serviced Air Conditioner, 2 Beds, 2 Chairs, 2 Tables, 2 Almirahs
+   </span>,
+    free wifi, an open gym, authorized parking, Cctv surveillance, housekeeping, and helpful staff to make your stay as hassle-free as possible, specifically created for working professionals and students.
+    <br>
+    Double occupancy rooms add an advantage of splitting the bills and creating a bond of friendship that you can cherish for life.
+    `,
     RoomImg: './img/Double Occupancy/Gurukul-pg-uttamNagar-Janakpuri-double-occupancy-11.jpg',
   },
   {
     RoomName: 'Single Occupancy',
     RoomType: 'With Cooler',
     RoomContent: `
-Loreore id quibusdam blanditiis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et officiis odio non, cupiditate quam fuga blanditiis dignissimos minima dolorem maiores!am aut quae earum nihil maiores eveniet adipisci sunt repellendus invent`,
-RoomImg: './img/Single Occupancy/Gurukul-pg-uttamNagar-Janakpuri-single-occupancy-5.jpg'
+    We provide completely equipped single-occupancy rooms with a pre-installed cooler to help you beat Delhi's scorching summers. Our rooms cover enough space for your personal bed, table and chair which is completely perfect for your study routine along with a closet for all your personal needs. 
+
+     Room Includes 
+     <span style="font-size:18px" class="secondry-color-red">
+     Cooler, 1 Bed, 1 Chair, 1 Table, 1 Almirah
+    </span>
+     and helpful staff to make your stay as hassle-free as possible, specifically created for working professionals and students. 
+    <br><br>
+    All Hostels don't have the same spartan aesthetic in mind. Our top priority is your comfort because we believe that a better life is one that is more comfortable! `,
+    RoomImg: './img/Single Occupancy/Gurukul-pg-uttamNagar-Janakpuri-single-occupancy-5.jpg'
   },
   {
     RoomName: 'Double Occupancy',
     RoomType: 'With Cooler',
     RoomContent: `
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem sit error saepe, ex ratione ing elit. Et officiis odio non, cupiditate quam fuga blanditiis dignissimos minima dolorem maiorore id quibusdam blanditiis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et officiis odio non, cupiditate quam fuga blanditiis dignissimos minima dolorem maiores!es!`,
+    Gurukul PG offers  <span style="font-size:18px" class="secondry-color-red">
+    Double Occupancy Rooms Without AC</span>
+     that include a variety of three course proper meals (breakfast, lunch, and dinner) with weekly menu revisions, premium furnishings,   
+   <span style="font-size:18px" class="secondry-color-red">
+   Cooler, 2 Beds, 2 Chairs, 2 Tables, 2 Almirahs
+  </span>,
+   free wifi, an open gym, authorized parking, Cctv surveillance, housekeeping, and helpful staff to make your stay as hassle-free as possible, specifically created for working professionals and students.
+   <br>
+   We plan to provide our residents with a balanced, healthy lifestyle! We have you covered when it comes to cleanliness, eating habits, lifestyle and emergencies.`,
     RoomImg: './img/Double Occupancy/Gurukul-pg-uttamNagar-Janakpuri-double-occupancy-4.jpg',
   },
 ]
 
 
 activeRoomIndex = 0;
-const roomImg=document.getElementById('room-img');
+const roomImg = document.getElementById('room-img');
 const roomContainer = document.querySelector('.setRoomData');
 
 function getNumber(index) {
@@ -62,7 +88,7 @@ function getCool() {
 
 const obj = roomsData[activeRoomIndex];
 window.addEventListener('DOMContentLoaded', () => {
-  roomImg.src=`${obj.RoomImg}`;
+  roomImg.src = `${obj.RoomImg}`;
   roomContainer.innerHTML = `
   <div class="header-aboutus">
   <h3><span class="secondry-color-red">${obj.RoomName}</span> Room ${obj.RoomType}</h3>
@@ -145,17 +171,17 @@ setTimeout(() => {
     setRoomAnimation();
   })
 
-  function setRoomAnimation(){
-    roomContainer.style.opacity='0';
+  function setRoomAnimation() {
+    roomContainer.style.opacity = '0';
 
-    
-    
-    setTimeout(()=>{
-    roomContainer.style.opacity='1';
-    setRoomData(activeRoomIndex);
-    },600)
-    
-    }
+
+
+    setTimeout(() => {
+      roomContainer.style.opacity = '1';
+      setRoomData(activeRoomIndex);
+    }, 600)
+
+  }
 
 
   function setRoomData(index) {
@@ -172,8 +198,8 @@ setTimeout(() => {
     } else {
       nextRoom.style.visibility = 'visible';
     }
-    
-    roomImg.src=`${room.RoomImg}`
+
+    roomImg.src = `${room.RoomImg}`
 
     roomContainer.innerHTML = `
     <div class="header-aboutus">

@@ -48,9 +48,6 @@ block2.addEventListener('mouseover', () => {
     setTimeout(() => {
     }, 500)
   }
-
-
-
 })
 // FORM CLOSED
 function closeSideForm() {
@@ -83,3 +80,10 @@ window.addEventListener('DOMContentLoaded', () => {
   }, 4000);
 });
 
+block3.addEventListener('click',()=>{
+  window.open('https://wa.me/message/UB5ILPOGTBYQL1', '_blank');
+ 
+})
+block4.addEventListener('click',()=>{
+  window.open('https://mail.google.com/mail/u/0/#inbox?compose=CllgCJNqLRsMsGSBHVPRmJjGxDTKMPBdrzwsHSssMMrNzRPVbgQphmzfkdlLPGNvFzSpQxvJPVqme/message/UB5ILPOGTBYQL1', '_blank');
+})
