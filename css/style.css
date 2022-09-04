@@ -20,6 +20,9 @@
 body {
   background-color: #ffffff;
 }
+a{
+  text-decoration: none;
+}
 
 /* header */
 #header {
@@ -78,6 +81,7 @@ a {
 .logo-top img {
   width: 120px;
   margin: 5px;
+  margin-top: 15px;
 }
 
 /* LINKS IN NAVBAR */
@@ -355,6 +359,24 @@ a {
 
   cursor: pointer;
 }
+.btn-whatsapp{
+  display: inline-block;
+  padding: 10px 15px;
+  text-transform: uppercase;
+  font-size: 13px;
+  margin-top: 10px;
+  transition: var(--transition);
+  letter-spacing: 2px;
+  color: white;
+  border: 1px solid rgb(73, 211, 73);
+  background-color: rgb(73, 211, 73);
+}
+.btn-whatsapp:hover{
+  background-color: white;
+  color: rgb(73, 211, 73);
+  cursor: pointer;
+}
+
 
 /* fixed navbar */
 .fixed-nav {
@@ -740,28 +762,35 @@ footer .social-icons ul li a:hover {
 }
 
 /* HEADER IMAGE FOR SUB PAGES */
+.contactPage #slider {
+  background: linear-gradient(#000000c2, rgba(29, 23, 2, 0.455), #000000c2),
+    url(../img/header.jpg) center/cover no-repeat;
+}
 .aboutPage #slider {
   background: linear-gradient(#000000c2, rgba(29, 23, 2, 0.455), #000000c2),
     url(../img/Slides/Gurukul_pg_slide7.JPG) center/cover no-repeat;
 }
+
+.roomsPage #slider {
+  background: linear-gradient(#000000c2, rgba(29, 23, 2, 0.455), #000000c2),
+    url(../img/header1.jpg) center/cover no-repeat;
+}
+
 .mealsPage #slider {
   background: linear-gradient(#000000c2, rgba(29, 23, 2, 0.455), #000000c2),
     url(../img/Slides/Gurukul_pg_slide10.JPG) center/cover no-repeat;
 }
-.roomsPage #slider {
-  background: linear-gradient(#000000c2, rgba(29, 23, 2, 0.455), #000000c2),
-    url(../img/Slides/Gurukul_pg_slide9.JPG) center/cover no-repeat;
-}
+
 .galleryPage #slider {
   background: linear-gradient(#000000c2, rgba(29, 23, 2, 0.455), #000000c2),
-    url(../img/Slides/Gurukul_pg_slide4.JPG) center/cover no-repeat;
+    url(../img/header2.jpg) center/cover no-repeat !important; 
 }
-.contactPage #slider {
+
+
+#slider{
   background: linear-gradient(#000000c2, rgba(29, 23, 2, 0.455), #000000c2),
-    url(../img/Slides/Gurukul_pg_slide11.JPG) center/cover no-repeat;
+  url(../img/Slides/Gurukul_pg_slide11.JPG) center/cover no-repeat;
 }
-
-
 .dashes {
   width: 100px;
   height: 2px;
@@ -1277,6 +1306,7 @@ footer .social-icons ul li a:hover {
   width: 90%;
   border: none;
   letter-spacing: 2px;
+  margin-bottom: 15px;
 }
 
 .SideformSubmitbtn:hover {
@@ -1340,13 +1370,13 @@ footer .social-icons ul li a:hover {
 }
 /* sidebar */
 #OurRooms {
-  background: linear-gradient(#ffffffe8, rgba(255, 255, 255, 0.628), #ffffff),
+  background: linear-gradient(#ffffffe8, rgba(255, 255, 255, 0.802), #ffffff),
     url(../img/roomsBackground.jpg) center/cover no-repeat;
   height: auto;
 }
 
 .roomContainer {
-  height: 93vh;
+  height: 100vh;
 }
 
 
@@ -1465,7 +1495,8 @@ footer .social-icons ul li a:hover {
 
 .room-content {
   overflow: hidden;
-
+  text-align: center;
+ 
 }
 
 @media screen and (min-width:700px) {
@@ -1495,8 +1526,12 @@ footer .social-icons ul li a:hover {
     padding: 20px;
     border-radius: 20px;
     border: 10px solid white;
-    background: linear-gradient(#fffffff7, rgba(255, 255, 255, 0.942), #ffffff),
+    background: linear-gradient(#ffffffdd, rgba(255, 255, 255, 0.977), #fffffff3),
       url(../img/roomsBackground.jpg) center/cover no-repeat;
+  }
+  .room-container{
+    height: 110vh;
+
   }
 }
 
@@ -1533,7 +1568,7 @@ footer .social-icons ul li a:hover {
 
 @media screen and (max-width:800px) {
   .roomContainer {
-    height: 110vh;
+    height: 130vh;
   }
 
   .flex-img iframe {
