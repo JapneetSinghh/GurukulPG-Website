@@ -1,7 +1,7 @@
 :root {
   --primary-color: rgb(153, 110, 2);
   /* --mustard: #7b9bbc; */
-  --mustard: #FFB200;
+  --mustard: #eda600;
   --transition: 0.3s all linear;
   --secondry-color: white;
   --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -570,7 +570,7 @@ a {
 
 .showcase1 {
   background: linear-gradient(#00000087, rgba(15, 12, 0, 0.614), #000000ea),
-    url(../img/Slides/Gurukul_pg_slide4.jpg) center/cover no-repeat fixed;
+    url(../img/header3.jpg) center/cover no-repeat fixed;
 }
 
 .showcase1 .header-aboutus {
@@ -885,6 +885,8 @@ footer .social-icons ul li a:hover {
 .size-container {
   max-width: 1100px;
   margin: auto;
+  height: auto;
+  margin-bottom: 10px;
 }
 
 #testimonials {
@@ -1213,6 +1215,9 @@ footer .social-icons ul li a:hover {
   color: brown;
   transform: rotate(270deg);
   cursor: pointer;
+}
+.errorContent{
+  min-height: 16px;
 }
 
 .sideForm-top {
@@ -1963,6 +1968,9 @@ footer .social-icons ul li a:hover {
 @media screen and (max-width:800px) {
   .sideForm-container {
     max-width: 300px;
+    height: 520px;
+    display: grid;
+    place-items: center;
   }
 
   .customer-center {
