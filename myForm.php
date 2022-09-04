@@ -12,7 +12,7 @@ $ipAddress = getenv("REMOTE_ADDR");
 // echo $email;
 $email_subject = "New Form submission";
 $email_body = "<b>You have received a new message from Gurukul PG</b><br> from the user $name.\n <br> phone: $phone \n ip:\n <br>$ipAddress \n time: $time \n <br> mail: $email \n   
-<section style='width: 100%; height:400px;background-color: rgb(255, 255, 255); padding: 20px;margin:0; box-sizing: border-box;'>
+<section style='width: 100%; height:auto;background-color: rgb(255, 255, 255); padding: 20px;margin:0; box-sizing: border-box;'>
 <article style='margin: auto;'>
    <div style='width: 100%; background-color: rgb(246, 240, 240);text-align: center; padding: 15px 0;border-bottom: 2px solid rgb(211, 211, 211);'>
    <h1 style='color: teal; font-size:35px;text-align: center;padding: 10px;'>Gurukul PG</h1>
