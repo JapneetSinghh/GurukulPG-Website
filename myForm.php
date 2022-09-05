@@ -209,7 +209,7 @@ mail($to,$email_subject,$email_body,$headers);
         <p><i class="fa-solid fa-envelope"></i> info@gurukulpg.in</p>
         <p style="max-width: 300px; font-size: 14px;"><i class="fa-solid fa-location-dot"></i>A-38,39,40, Old Pankha Road, Opp Metro Pillar No.641, Uttam Nagar East, New Delhi, Delhi 110059</p>
        </div>
-       <a href="" ><i class="fa-brands fa-whatsapp"></i> &nbsp; Click To Chat</a>
+       <a href="https://wa.me/message/UB5ILPOGTBYQL1" ><i class="fa-brands fa-whatsapp"></i> &nbsp; Click To Chat</a>
      </div>
     
     </article>

@@ -13,7 +13,16 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=TAG_ID"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments) };
+    gtag('js', new Date());
 
+    gtag('config', 'TAG_ID');
+    gtag('config', 'DC-ZZZZZZ');
+  </script>
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/menu.css">
   <link rel="stylesheet" href="./css/sideForm.css">
@@ -21,26 +30,25 @@
   <link rel="stylesheet" href="./css/rooms.css">
   <link rel="stylesheet" href="./css/contactUs.css">
 
-  <title>Reach Gurukul PG Opposite Uttam Nagar Metro Station and Bus Terminal</title>
-  <meta name="description" content="Navigating to Gurukul PG is quite easy as it is opposite to Uttam Nagar East Metro station and Bus Terminal. Location of our PG is best suited to the students of Akash Institute, Physics Wallah, Target, Vidya Mandir, Narayana as they can reach there within 5 minutes of walking
-  ">
+  <title>Gurukul PG Opposite Uttam Nagar Metro with AC/Non AC rooms | Contact </title>
+  <meta name="description" content="Gurukul PG for Boys is just Opposite to Uttam Nagar Metro Station and Bus Terminal making travel easy for our guests. Akash Institute, Physcic Wallah, Naraina, Target all Coaching Institutes in the radius of 500m.">
 
   <meta name="keywords" content="Gurukul PG for Boys, PG in Delhi, PG in Janakpuri, PG in Uttam Nagar, PG in Vikaspuri, PG near Uttam Nagar Metro Station, PG near Akash Institute, PG near Physics Wallah, PG near Target, PG near me, PG for Boys, Book 2-share in Gurukul PG,  Book 1-share in Gurukul PG, Single Occupancy Room at Gurukul PG, Hostel In Delhi, Hostel in Uttam Nagar, Hostel in Janakpuri, Breakfast Lunch Dinner in PG, Gurukul PG Rooms, Gurukul PG facilities, Best Pg in Uttam Nagar, Best Pg in Delhi, Pg for students in Delhi,
 Hostel Near Uttam Nagar Metro station, Hostel near Akash Institute,PG near Pankha Road">
   <meta name="author" content="Gurukul PG">
   <meta name="format-detection" content="telephone=no">
-  <meta property="og:title" content="Reach Gurukul PG Opposite Uttam Nagar Metro Station and Bus Terminal" />
+  <meta property="og:title" content="Gurukul PG Opposite Uttam Nagar Metro with AC/Non AC rooms | Contact " />
   <meta property="og:description"
-    content="Navigating to Gurukul PG is quite easy as it is opposite to Uttam Nagar East Metro station and Bus Terminal. Location of our PG is best suited to the students of Akash Institute, Physics Wallah, Target, Vidya Mandir, Narayana as they can reach there within 5 minutes of walking" />
-  <meta property="og:image" content="./img/slide2.jpg" />
+    content="Gurukul PG for Boys is just Opposite to Uttam Nagar Metro Station and Bus Terminal making travel easy for our guests. Akash Institute, Physcic Wallah, Naraina, Target all Coaching Institutes in the radius of 500m." />
+  <meta property="og:image" content="https://gurukulpg.in/img/OgContact.png" />
   <meta name="author" content="Gurukul PG">
   <meta name=”robots” content=”index,follow”>
-  <meta property="og:url" content="https://gurukulpg.in/blog/" />
-  <meta name="twitter:title" content="Reach Gurukul PG Opposite Uttam Nagar Metro Station and Bus Terminal">
+  <meta property="og:url" content="https://gurukulpg.in/contact.html" />
+  <meta name="twitter:title" content="Gurukul PG Opposite Uttam Nagar Metro with AC/Non AC rooms | Contact ">
   <meta name="twitter:description"
-    content="Navigating to Gurukul PG is quite easy as it is opposite to Uttam Nagar East Metro station and Bus Terminal. Location of our PG is best suited to the students of Akash Institute, Physics Wallah, Target, Vidya Mandir, Narayana as they can reach there within 5 minutes of walking">
-  <meta name="twitter:image" content="./img/slide2.jpg">
-  <meta property="og:site_name" content="Gurukul PG Contact Us" />
+    content="Gurukul PG for Boys is just Opposite to Uttam Nagar Metro Station and Bus Terminal making travel easy for our guests. Akash Institute, Physcic Wallah, Naraina, Target all Coaching Institutes in the radius of 500m.">
+  <meta name="twitter:image" content="https://gurukulpg.in/img/OgContact.png">
+  <meta property="og:site_name" content="Gurukul PG Meals" />
 </head>
 
 <body>
@@ -185,7 +193,8 @@ Hostel Near Uttam Nagar Metro station, Hostel near Akash Institute,PG near Pankh
             <div class="wrapper"></div>
             <h2 id="status" style="color: #ee7e6a;"></h2>
 
-            <div style="display: flex; align-items: center;">
+            <div>
+             <div class="captcha-block1">
               <div>
                 <input type="text" oncopy="return false" oncut="return false" onpaste="return false" readonly
                   id="generated-captcha">
@@ -193,12 +202,16 @@ Hostel Near Uttam Nagar Metro station, Hostel near Akash Institute,PG near Pankh
               <div>
                 <input type="text" id="entered-captcha" placeholder="Enter captcha..">
               </div>
+             </div> 
+             <div class="captcha-block2">
               <button style="padding:10px ;" id="captchabtn" type="button" onclick="check()">
                 check
               </button>
               <button id="captchabtn" type="button" onclick="generate()" id="gen">
                 Generate New
               </button>
+             </div>
+         
             </div>
           </form>
           <!-- SUBMIT FORM -->
@@ -209,8 +222,7 @@ Hostel Near Uttam Nagar Metro station, Hostel near Akash Institute,PG near Pankh
     </article>
     <article class="contacts">
       <div class="contacts-content">
-        <h2>Contacts</h2>
-        <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur.</p>
+        <h2>Meet Us</h2>
         <div class="contacts-info">
           <h3><i class="fa-solid fa-location-dot"></i> </h3>
           <div>
